@@ -12,5 +12,7 @@ SRC_DIR="libogg-${VERSION}"
 
 src_install() {
 	cd ${B}
-	cyginstall docdir=
+	cyginstall
+
+	rm -fr ${D}${CROSS_DATADIR}/doc/
 }
